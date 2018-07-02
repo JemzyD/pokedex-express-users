@@ -7,6 +7,10 @@ class Home extends React.Component {
       <html>
         <head />
         <body>
+         <form action="/" method="get">
+            <button type="submit" name="sortby" value="name">Sort By Name</button>
+            <button type="submit" name="sortby" value="id">Sort By ID</button>
+        </form>
           <h1>Welcome to Pokedex</h1>
           <ul>
             {this.props.pokemon.map(pokemon => (
